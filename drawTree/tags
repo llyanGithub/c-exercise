@@ -1,0 +1,34 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+FAIL	dataTypes.h	/^#define FAIL /;"	d
+OBJS	Makefile	/^OBJS = $(SRCS:.c=.o)$/;"	m
+SRCS	Makefile	/^SRCS = $(wildcard *.c)$/;"	m
+SUCCESS	dataTypes.h	/^#define SUCCESS /;"	d
+TARGETS	Makefile	/^TARGETS = Tree$/;"	m
+__COMMON_H	common.h	/^#define __COMMON_H$/;"	d
+__DATA_TYPES_H	dataTypes.h	/^#define __DATA_TYPES_H$/;"	d
+__TREE_H	tree.h	/^#define __TREE_H$/;"	d
+binTree_s	tree.h	/^struct binTree_s {$/;"	s
+binTree_t	tree.h	/^typedef struct binTree_s binTree_t;$/;"	t	typeref:struct:binTree_s
+bool	dataTypes.h	/^typedef char               bool;$/;"	t
+cc	Makefile	/^cc = gcc$/;"	m
+destoryTree	tree.c	/^void destoryTree(binTree_t* pTree)$/;"	f
+drawTree	tree.c	/^void drawTree(uint16_t x, uint16_t y, binTree_t* pTree)$/;"	f
+genTree	tree.c	/^binTree_t* genTree(uint32_t* pArray, uint32_t len)$/;"	f
+int16_t	dataTypes.h	/^typedef short              int16_t;$/;"	t
+int32_t	dataTypes.h	/^typedef int                int32_t;$/;"	t
+itoa	tree.c	/^int itoa(uint32_t num, uint8_t* buf, uint8_t radix)$/;"	f
+left	tree.h	/^   struct binTree_s* left;$/;"	m	struct:binTree_s	typeref:struct:binTree_s::binTree_s
+main	main.c	/^int main(int argc, char* argv[])$/;"	f
+printTree	tree.c	/^void printTree(binTree_t* pTree)$/;"	f
+right	tree.h	/^   struct binTree_s* right;$/;"	m	struct:binTree_s	typeref:struct:binTree_s::binTree_s
+termial_draw_char	draw.c	/^void termial_draw_char(int x, int y, uint8_t* s)$/;"	f
+termial_init	draw.c	/^void termial_init()$/;"	f
+uint16_t	dataTypes.h	/^typedef unsigned short     uint16_t;$/;"	t
+uint32_t	dataTypes.h	/^typedef unsigned int       uint32_t;$/;"	t
+uint8_t	dataTypes.h	/^typedef unsigned char      uint8_t;$/;"	t
+value	tree.h	/^   uint32_t value;$/;"	m	struct:binTree_s

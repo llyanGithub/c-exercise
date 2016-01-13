@@ -1,0 +1,1 @@
+quickSort.o: quickSort.c
